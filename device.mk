@@ -4,7 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# API levels
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Soong namespaces
