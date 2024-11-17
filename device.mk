@@ -52,7 +52,7 @@ PRODUCT_PACKAGES += \
     ueventd.rc \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6768
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
