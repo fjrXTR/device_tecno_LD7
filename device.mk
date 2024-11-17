@@ -36,6 +36,24 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6768 \
+    init.aee.rc \
+    init.ago.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6768.rc \
+    init.mt6768.usb.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    init.rc \
+    init.recovery.mt6768.rc \
+    ueventd.rc \
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
